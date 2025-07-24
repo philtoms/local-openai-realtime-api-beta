@@ -21,6 +21,8 @@
     "websocket": "^1.0.35"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.6.3",
+    "kokoro-js": "^1.2.1",
     "ws": "^8.18.0"
   }
 }
