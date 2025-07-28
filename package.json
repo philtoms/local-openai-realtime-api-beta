@@ -1,10 +1,13 @@
 {
   "name": "@pipsqueek/local-realtime-api-beta",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "description": "OpenAI Realtime API Reference Client (beta)",
-  "main": "index.js",
+  "main": "./lib/socket-api.js",
+  "browser": {
+    "./lib/socket-api.js": "./index.js"
+  },
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "mocha ./test/index.js"
@@ -21,8 +24,11 @@
     "websocket": "^1.0.35"
   },
   "dependencies": {
+    "@google/genai": "^1.11.0",
     "@huggingface/transformers": "^3.6.3",
     "kokoro-js": "^1.2.1",
+    "ollama": "^0.5.16",
+    "openai": "^5.11.0",
     "ws": "^8.18.0"
   }
 }
